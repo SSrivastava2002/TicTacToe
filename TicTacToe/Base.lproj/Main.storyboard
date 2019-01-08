@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXB-Mf-Q06">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-YS-bK4" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="-0.5" y="-0.5" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061941609569" green="0.42442838324063203" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="WIt-wF-SCo"/>
+                                            <constraint firstAttribute="width" constant="75" id="gez-WZ-I2c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-BL-gVN" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="86.5" y="-0.5" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="ANy-cw-I7i"/>
+                                            <constraint firstAttribute="height" constant="75" id="vXt-iG-X0A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qph-q8-K4E" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="175" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="SZ2-OM-Vn4"/>
+                                            <constraint firstAttribute="height" constant="75" id="x0x-y0-5F0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEt-0A-UFd" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="174" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="44H-ZC-7HD"/>
+                                            <constraint firstAttribute="width" constant="75" id="R0u-nB-B1Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p7-ah-slR" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="174" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="8hm-e7-yfO"/>
+                                            <constraint firstAttribute="height" constant="75" id="Ck7-6K-BIf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyE-Z5-rgR" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="87" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="aKS-K1-qRW"/>
+                                            <constraint firstAttribute="height" constant="75" id="uIX-ph-PRF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqh-7e-q1W" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="85" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="VVq-PK-vh8"/>
+                                            <constraint firstAttribute="width" constant="75" id="YGD-HH-TXW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-8u-z3H" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="175" y="-1" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="8ld-pQ-z6m"/>
+                                            <constraint firstAttribute="height" constant="75" id="U7j-wK-jgy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-gK-9uy" customClass="GridLabel" customModule="TicTacToe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85" width="75" height="75"/>
+                                        <color key="backgroundColor" red="0.39565061940000001" green="0.42442838319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="6iJ-J7-JrH"/>
+                                            <constraint firstAttribute="width" constant="75" id="PTz-dh-gZL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54210881735606375" green="0.82045076162358221" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="zrK-gK-9uy" firstAttribute="leading" secondItem="BXB-Mf-Q06" secondAttribute="leading" id="0Iw-bk-GBm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cqh-7e-q1W" secondAttribute="trailing" id="2Z7-5F-HIB"/>
+                                    <constraint firstItem="qph-q8-K4E" firstAttribute="leading" secondItem="BXB-Mf-Q06" secondAttribute="leading" id="2k4-e5-yd6"/>
+                                    <constraint firstItem="YyE-Z5-rgR" firstAttribute="top" secondItem="hlP-BL-gVN" secondAttribute="bottom" constant="12.5" id="422-zE-ZQe"/>
+                                    <constraint firstAttribute="bottom" secondItem="MEt-0A-UFd" secondAttribute="bottom" constant="1" id="6Yq-ht-rP9"/>
+                                    <constraint firstItem="LSs-8u-z3H" firstAttribute="leading" secondItem="hlP-BL-gVN" secondAttribute="trailing" constant="13.5" id="7e1-Hg-23A"/>
+                                    <constraint firstItem="YyE-Z5-rgR" firstAttribute="leading" secondItem="zrK-gK-9uy" secondAttribute="trailing" constant="12" id="A1s-99-7Vj"/>
+                                    <constraint firstAttribute="bottom" secondItem="qph-q8-K4E" secondAttribute="bottom" id="Dxz-k3-W8R"/>
+                                    <constraint firstItem="LSs-8u-z3H" firstAttribute="top" secondItem="BXB-Mf-Q06" secondAttribute="top" constant="-1" id="O24-Ce-FPb"/>
+                                    <constraint firstItem="Cqh-7e-q1W" firstAttribute="leading" secondItem="YyE-Z5-rgR" secondAttribute="trailing" constant="13" id="PRI-3U-XgG"/>
+                                    <constraint firstAttribute="bottom" secondItem="9p7-ah-slR" secondAttribute="bottom" constant="1" id="Pc0-9X-vyu"/>
+                                    <constraint firstItem="hlP-BL-gVN" firstAttribute="top" secondItem="BXB-Mf-Q06" secondAttribute="top" constant="-0.5" id="V8u-Z5-9hj"/>
+                                    <constraint firstItem="hlP-BL-gVN" firstAttribute="leading" secondItem="d9d-YS-bK4" secondAttribute="trailing" constant="12" id="VCf-6d-MUD"/>
+                                    <constraint firstItem="d9d-YS-bK4" firstAttribute="leading" secondItem="BXB-Mf-Q06" secondAttribute="leading" constant="-0.5" id="Wn1-e5-Zqa"/>
+                                    <constraint firstAttribute="height" constant="250" id="YSW-vG-ilw"/>
+                                    <constraint firstItem="MEt-0A-UFd" firstAttribute="top" secondItem="YyE-Z5-rgR" secondAttribute="bottom" constant="12" id="Z8B-si-8cd"/>
+                                    <constraint firstAttribute="trailing" secondItem="9p7-ah-slR" secondAttribute="trailing" id="cQG-71-o7t"/>
+                                    <constraint firstAttribute="width" constant="250" id="g73-iH-8fT"/>
+                                    <constraint firstItem="9p7-ah-slR" firstAttribute="top" secondItem="Cqh-7e-q1W" secondAttribute="bottom" constant="14" id="gRg-mr-hEg"/>
+                                    <constraint firstItem="qph-q8-K4E" firstAttribute="top" secondItem="zrK-gK-9uy" secondAttribute="bottom" constant="15" id="gUX-aQ-xZw"/>
+                                    <constraint firstItem="9p7-ah-slR" firstAttribute="leading" secondItem="MEt-0A-UFd" secondAttribute="trailing" constant="13" id="gee-Ux-vGB"/>
+                                    <constraint firstItem="d9d-YS-bK4" firstAttribute="top" secondItem="BXB-Mf-Q06" secondAttribute="top" constant="-0.5" id="kfE-o0-VMF"/>
+                                    <constraint firstItem="MEt-0A-UFd" firstAttribute="leading" secondItem="qph-q8-K4E" secondAttribute="trailing" constant="12" id="r4T-cT-as6"/>
+                                    <constraint firstItem="Cqh-7e-q1W" firstAttribute="top" secondItem="LSs-8u-z3H" secondAttribute="bottom" constant="11" id="ynz-1o-QdB"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSs-8u-z3H" secondAttribute="trailing" id="zQg-HA-UZY"/>
+                                    <constraint firstItem="zrK-gK-9uy" firstAttribute="top" secondItem="d9d-YS-bK4" secondAttribute="bottom" constant="10.5" id="znH-go-kll"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="M0O-Jd-hEB" appends="YES" id="Zho-cb-Sb9"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIC TAC TOE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-pP-FWO">
+                                <rect key="frame" x="96" y="45" width="197" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72968147750000001" green="0.58406262669999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72968147754552692" green="0.58406262671158982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BXB-Mf-Q06" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cwd-tF-DpM"/>
+                            <constraint firstItem="BXB-Mf-Q06" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jep-xG-5pV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="BXB-Mf-Q06" id="ROU-gs-vEf"/>
+                        <outlet property="gridLabel0" destination="d9d-YS-bK4" id="tBc-tC-ST9"/>
+                        <outlet property="gridLabel1" destination="hlP-BL-gVN" id="3SH-gg-YNj"/>
+                        <outlet property="gridLabel2" destination="LSs-8u-z3H" id="br6-r8-UTC"/>
+                        <outlet property="gridLabel3" destination="zrK-gK-9uy" id="kr7-dA-d4W"/>
+                        <outlet property="gridLabel4" destination="YyE-Z5-rgR" id="n5u-5q-Sag"/>
+                        <outlet property="gridLabel5" destination="Cqh-7e-q1W" id="RJG-M8-WcY"/>
+                        <outlet property="gridLabel6" destination="qph-q8-K4E" id="HVn-an-qwF"/>
+                        <outlet property="gridLabel7" destination="MEt-0A-UFd" id="41S-ep-45b"/>
+                        <outlet property="gridLabel8" destination="9p7-ah-slR" id="250-Jy-6N7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M0O-Jd-hEB">
+                    <connections>
+                        <action selector="onTappedBackround:" destination="BYZ-38-t0r" id="dd6-Xw-zrF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+</document>
